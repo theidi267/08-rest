@@ -1,20 +1,20 @@
 'use strict';
 
-let parser = require('../../../src/lib/parser.js');
+let parser = require('../../src/lib/parser.js');
 
 describe('URL Parser', () => {
 
   it('requires a request object', () => {
     let req = undefined;
     return parser(req)
-      .then( response => false )
+      .then( response => false ) //eslint-disable-line
       .catch( err => expect(err).toBeDefined() );
   });
 
   it('requires a req object with a url', () => {
     let req = {};
     return parser(req)
-      .then( response => false )
+      .then( response => false ) //eslint-disable-line
       .catch( err => expect(err).toBeDefined() );
   });
 
@@ -22,7 +22,7 @@ describe('URL Parser', () => {
     let req = { url: 'http://localhost' };
     return parser(req)
       .then( request => expect(typeof request.url).toEqual('object') )
-      .catch( err => false );
+      .catch( err => false ); //eslint-disable-line
   });
 
   it('given a complicated url, does all the things', () => {
@@ -34,5 +34,4 @@ describe('URL Parser', () => {
       })
       .catch( console.error );
   });
-
 });
