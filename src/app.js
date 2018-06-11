@@ -1,10 +1,9 @@
 'use strict';
 
-
 let http = require('http');
 
 const router = require('./lib/router.js');
-const api = require('./api/api.js');
+const api = require('./lib/api.js'); //eslint-disable-line
 
 let isRunning = false;
 

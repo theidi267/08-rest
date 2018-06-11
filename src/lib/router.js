@@ -1,12 +1,11 @@
 'use strict';
 
 const parser = require('./parser.js');
-
 const router = module.exports = {};
 
 router.routes = {};
 
-const methods = ['GET','PUT','PATCH','POST','DELETE'];
+const methods = ['GET', 'PUT', 'PATCH', 'POST', 'DELETE'];
 
 methods.forEach( (method) => {
   router.routes[method] = {};
@@ -15,19 +14,20 @@ methods.forEach( (method) => {
   };
 });
 
-router.route = (req,res) => {
-
+router.route = (req, res) => {
+  
   return parser(req)
-    .then(req => {
+    .then( req => {
+      console.log(req.url.pathname);
       let handler = router.routes[req.method][req.url.pathname];
-            if (handler) {
-        return handler(req,res);
+      console.log(handler);
+      if (handler) {
+        return handler(req, res);
       }
     })
-    .catch(err => {
-    console.error('NOT_FOUND', req.url.pathname);
-    res.writeHead(404);
-    res.end();
+    .catch(err => { //eslint-disable-line
+      console.error('NOT_FOUND', req.url.pathname, 'and method: ' + req.method);
+      res.writeHead(404);
+      res.end();
     });
-
 };

@@ -1,6 +1,6 @@
 'use strict';
 
-let router = require('../../../src/lib/router.js');
+let router = require('../../src/lib/router.js');
 
 describe('Router', () => {
 

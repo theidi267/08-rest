@@ -4,7 +4,7 @@
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 08: Vanilla REST API ======",
   "main": "index.js",
   "scripts": {
-    "lint":"eslint **/*.js",
+    "lint": "eslint **/*.js",
     "test": "jest --verbose --coverage",
     "tests-watch": "jest --watchAll --verbose --coverage"
   },
