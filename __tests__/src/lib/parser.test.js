@@ -1,6 +1,6 @@
 'use strict';
 
-let parser = require('../../src/lib/parser.js');
+let parser = require('../../../src/lib/parser.js');
 
 describe('URL Parser', () => {
 
