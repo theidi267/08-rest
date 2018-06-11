@@ -5,12 +5,12 @@
 
 Timea Heidenreich
 
-[![Build Status](https://travis-ci.com/theidi267/09-persistence.svg?branch=master)](https://travis-ci.com/theidi267/09-persistence)
+[![Build Status](https://travis-ci.com/theidi267/08-rest.svg?branch=master)](https://travis-ci.com/theidi267/08-rest)
 
 
 - Github Repo: [https://github.com/theidi267/08-rest](https://github.com/theidi267/08-rest)
 - Herouku app: [https://rest-08.herokuapp.com/](https://rest-08.herokuapp.com/)
-- Travis Built: [https://travis-ci.com/theidi267/09-persistence](https://travis-ci.com/theidi267/09-persistence)
+- Travis Built: [https://travis-ci.com/theidi267/08-rest](https://travis-ci.com/theidi267/08-rest)
 
 ### Project
 
